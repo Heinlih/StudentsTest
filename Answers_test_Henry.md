@@ -7,6 +7,7 @@ Challenge 1. Compute GC-content of the DNA.
 DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G and C nucleotides vary between species. You need to google the sequence of the human chromosome Y and compute the abundance of each of the four nucleotides (A, T, G, and C).
 
 Ответ: Содержание G-C в Y-хромосоме человека - 39,18845%. Источник ДНК последовательности Y-хромосомы:http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/ .
+
 Пояснение: Решал с помощью языка Python. Ниже прилагаю напечатанный код и файл(поскольку на гитхабе нельзя прикрепить формат.py, .fasta, присылаю ссылку на файлобменник с файлами https://dropmefiles.com/FwUU5).
 
 Начало кода
