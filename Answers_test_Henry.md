@@ -11,40 +11,69 @@ DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G a
 Пояснение: Решал с помощью языка Python. Ниже прилагаю напечатанный код и файл(поскольку на гитхабе нельзя прикрепить формат.py, .fasta, присылаю ссылку на файлобменник с файлами https://dropmefiles.com/FwUU5).
 
 Начало кода
+
 a = 0
+
 t = 0
+
 g = 0
+
 c = 0
+
 n = 0
+
 with open("ychr.fasta") as f:
+    
     for line in f:
-        if ">" not in line:
-            for j in line:
-                if j == "N":
+        
+	if ">" not in line:
+            
+	    for j in line:
+                
+		if j == "N":
                     n += 1
-                if j == "A":
+                
+		if j == "A":
                     a += 1
-                if j == "T":
+                
+		if j == "T":
                     t += 1
-                if j == "G":
+                
+		if j == "G":
                     g += 1
-                if j == "C":
+                
+		if j == "C":
                     c += 1
+
 su = a + t + g + c + n
+
 suu = a + t + g + c
+
 print("with N-tails:")
+
 print("A:",100 * (a / su), a)
+
 print("T:",100 * (t / su), t)
+
 print("G:",100 * (g / su), g)
+
 print("C:",100 * (c / su), c)
+
 print("Total length", su, "\n")
 
+
 print("without N-tails:")
+
 print("A:",100 * (a / suu))
+
 print("T:",100 * (t / suu))
+
 print("G:",100 * (g / suu))
+
 print("C:",100 * (c / suu))
+
 print("Total length", suu, "\n")
+
 
 print("Overall G-C content:", ((g + c) / (a + t + g + c)) * 100)
 
