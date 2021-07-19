@@ -10,8 +10,7 @@ DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G a
 
 Пояснение: Решал с помощью языка Python. Ниже прилагаю напечатанный код и файл(поскольку на гитхабе нельзя прикрепить формат.py, .fasta, присылаю ссылку на файлобменник с файлами https://dropmefiles.com/FwUU5).
 
-Начало кода
-
+'''
 a = 0
 
 t = 0
@@ -77,7 +76,7 @@ print("Total length", suu, "\n")
 
 print("Overall G-C content:", ((g + c) / (a + t + g + c)) * 100)
 
-Конец кода
+'''
 
 
 Challenge 2. Overlap bed files.
