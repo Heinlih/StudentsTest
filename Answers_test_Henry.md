@@ -1,7 +1,6 @@
 Здравствуйте, уважаемый Вениамин Семенович!
 
 Предлагаю Вашему вниманию мои ответы и решения на задания из теста.
-*Еще хотел бы разобраться со вторым заданием. Подскажите пожалуйста, откуда взять файлы .bed с которыми надо работать?
 
 Challenge 1. Compute GC-content of the DNA.
 DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G and C nucleotides vary between species. You need to google the sequence of the human chromosome Y and compute the abundance of each of the four nucleotides (A, T, G, and C).
@@ -53,10 +52,15 @@ DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G a
 	print("Overall G-C content:", ((g + c) / (a + t + g + c)) * 100)
 
 Challenge 2. Overlap bed files.
-.bed files represent genomic intervals. It has a common format described elsewhere: 
-https://genome.ucsc.edu/FAQ/FAQformat.html#format1
-
 You have two bed files, file1.bed and file2.bed as input. You need to output file overlap.bed containing intervals of file1.bed overlapping at least one interval of file2.bed
+
+Используем утилиту для работы с .bed файлами - Bedtools.
+
+
+	sort -k1,1 -k2,2n file1.bed > in.sortedfile1.bed
+	sort -k1,1 -k2,2n file2.bed > in.sortedfile2.bed
+	bedtools intersect -a in.sortedfile1.bed -b in.sortedfile2.bed -wa > overlap.bed
+
 
 
 Challenge 3. Read the paper.
