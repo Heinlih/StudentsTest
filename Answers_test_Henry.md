@@ -7,7 +7,7 @@ DNA is composed of 4 nucleotides, A, T, G, and C. The portion (frequency) of G a
 
 Ответ: Содержание G-C в Y-хромосоме человека - 39,18845%. Источник ДНК последовательности Y-хромосомы:http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/ .
 
-Пояснение: Решал с помощью языка Python. Ниже прилагаю код и файл(поскольку на гитхабе нельзя прикрепить формат.py, .fasta, присылаю ссылку на файлобменник с файлами https://dropmefiles.com/ZTxaA).
+Пояснение: Решал с помощью языка Python. Ниже прилагаю код и файл(поскольку на гитхабе нельзя прикрепить формат.py, .fasta, присылаю ссылку на файлобменник с файлами https://dropmefiles.net/ru/eRE7acYCf).
 
 	a = 0
 	t = 0
